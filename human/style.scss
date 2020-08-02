@@ -102,6 +102,7 @@ body{
       border-radius: 50%;
       left: 23px;
       top: 20px;
+      animation: smile 5s;
       clip-path: circle(70% at 50% 100%);
       z-index: 3;
     }
@@ -132,4 +133,9 @@ body{
         right: 12px;
       }
     }
+}
+
+@keyframes smile {
+  from {clip-path: circle(9% at 50% 100%);}
+  to {clip-path: circle(70% at 50% 100%);}
 }
